@@ -1,0 +1,13 @@
+HOW TO DEPLOY (Streamlit Community Cloud - free)
+1. Create a free account at https://github.com and make a NEW PUBLIC repository (e.g. diamond-price-app).
+2. Upload these 3 files to the repository: app.py, requirements.txt, diamond_price_model.pkl
+3. Go to https://share.streamlit.io, sign in with GitHub, click "New app".
+4. Choose your repository, branch "main", main file path "app.py", then click Deploy.
+5. Wait 2-3 minutes. Copy the live link (https://<name>.streamlit.app).
+6. Open the notebook in Colab (or any editor) and paste the link in the very first line,
+   replacing: PASTE YOUR LIVE DEPLOYMENT LINK HERE
+7. Upload to Google Classroom: the notebook (.ipynb), diamonds.csv and diamond_price_model.pkl.
+
+NOTE: scikit-learn in requirements.txt (1.8.0) must match the version used to create the .pkl.
+If you re-run the notebook in Colab and use the NEW .pkl, change that line to the scikit-learn
+version printed in Step 1 of your Colab run.
